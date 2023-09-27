@@ -5,55 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-    body{
-        background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v904-nunny-012_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=5943c6cd1f5d785cddeafb1f33ba56a4);
-    }
-        fieldset{
-            background-image: url(bg.jpg);
-            background-size: cover;
-            width: 250px;
-            height: 300px;
-            text-align: center;
-            border-style: inset;
-            border-width: 4px;
-            border-color: red;
-            border-radius: 25px;
-            margin-top: 150px;
+        body{
+            background-color:rgb(130, 248, 4);
         }
+        fieldset{
+            border: solid white;
+            margin-bottom: 10px;
+            width: 600px;
+            border-radius: 10px;
+            background-color: greenyellow;
+            text-align: left;
+            padding: 20px;
+        }
+        input,textarea{
+           margin-left: 130px;
 
-    h2{
-        color: red;
-        font-family: 'Times New Roman', Times, serif;
-        font-variant: small-caps;
-        font-weight: bolder;
-        font-style: italic;
-        text-shadow: 3px 3px 6px black;
-    }
+        }
+      
+        label{
+            font-size: x-large;
+            font-family: 'Times New Roman', Times, serif;
+            font-variant: small-caps;
+            font-weight: bolder;
+        }
+        #btn{
+            background-color:black  ;
+            border-radius: 10px;
+            color: bisque;
+            width: 100px;
+            height: 40px;
+            
 
-    label{
-        font-weight: bolder;
-        font-style: italic;
-        font-family: 'Times New Roman', Times, serif;
-        font-variant: small-caps;
-    }
-    p,a{
-        font-size: small;
-        display:inline;
-    }
-  
-
+        }
+       
     </style>
+
 </head>
-<body><center>
+<body>
+    <center>
+    <h2>Step 1:Your Details</h2>
     <fieldset>
-        <h2>Login Form</h2>
-        <label for="">User Name :</label><input type="text" placeholder="Ex.Ram_123"><br><br>
-        <label for="">Password  :</label> <input type="password" placeholder="Ex.abcd1234"><br><br>
-        <input type="submit" value="Login"><br><br> 
-        <p>Don't have an account?</p>
-        <a href="sign up.html">Sign up</a>
-    </fieldset>
-</center>
+    <label for="">Name</label><input type="text" placeholder="First And Last Name"><br>
+</fieldset>
+<fieldset>
+    <label for="">Email</label><input type="email" placeholder="example@domain.com"><br>
+</fieldset>
+<fieldset>
+    <label for="">Phone</label><input type="number"><br>
+</fieldset>
+
+    <h2>Step 2.Deliverey address</h2>
+    <fieldset>
+    <label for="Address">Address</label><br><textarea name="" id="" cols="30" rows="10"></textarea><br>
+</fieldset>
+    <fieldset>
+    <label for="">Post Code</label><input type="number"> <br>
+</fieldset>
+<fieldset>
+    <label for="">Country</label><input type="text">
+</fieldset>
+
+    <h2>Step 3:Card Details</h2>
+        <fieldset>
+            card type <br><br>
+            <input type="radio" name="visa" id="visa"> <img src="visa-svgrepo-com.svg" alt=""> visa
+            <input type="radio" name="visa">AmEx
+            <input type="radio" name="visa">Mastercard
+        
+        </fieldset>
+        <fieldset>
+            <label for="">Card Numbar</label><input type="text"><br>
+        </fieldset>
+        <fieldset>
+            <label for="">Security code</label><input type="text"><br>
+        </fieldset>
+        <fieldset>
+            <label for="">Name on Card</label><input type="text" placeholder="Exact name as on card"><br>
+        </fieldset>
+        <input type="button" id="btn" value="BUY IT!">
+    </center>
 </body>
 </html>
